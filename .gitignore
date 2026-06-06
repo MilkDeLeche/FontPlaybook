@@ -1,0 +1,9 @@
+# Local working bundles
+*.zip
+web-font-typography/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

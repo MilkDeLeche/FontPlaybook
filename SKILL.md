@@ -1,9 +1,9 @@
 ---
-name: web-font-typography
-description: Teach or guide Claude to choose, load, pair, and apply fonts in webpages and web apps. Use when building or reviewing frontend typography, selecting UI fonts, creating CSS type systems, implementing Google Fonts/self-hosted/variable fonts, setting heading/body styles, improving readability, or replacing generic/default web-safe typography with a polished webpage font system.
+name: font-playbook
+description: Teach or guide Claude and AI coding agents to choose, load, pair, and apply fonts in webpages and web apps. Use when building or reviewing frontend typography, selecting UI fonts, creating CSS type systems, implementing Google Fonts/self-hosted/variable fonts, setting heading/body styles, improving readability, or replacing generic/default web-safe typography with a polished webpage font system.
 ---
 
-# Web Font Typography
+# FontPlaybook
 
 Use this skill to make typography decisions concrete in a webpage. Do not stop at naming a font; inspect the site context, identify what the current typography is failing to do, compare appropriate font directions, implement how the chosen family is loaded and tokenized, then check it in the UI.
 
