@@ -96,17 +96,77 @@ See [references/site-type-font-strategy.md](references/site-type-font-strategy.m
 
 ```text
 FontPlaybook/
-├── SKILL.md
-├── README.md
-├── assets/
-│   └── fontplaybook-banner.svg
-├── examples/
-│   ├── demo-prompts.md
-│   └── sample-report.md
-└── references/
-    ├── font-playbook.md
-    └── site-type-font-strategy.md
+|-- SKILL.md
+|-- README.md
+|-- assets/
+|   `-- fontplaybook-banner.svg
+|-- examples/
+|   |-- demo-prompts.md
+|   `-- sample-report.md
+`-- references/
+    |-- font-playbook.md
+    `-- site-type-font-strategy.md
 ```
+
+## Install
+
+Yes, FontPlaybook is easy to install, but use the right method for the Claude surface you are using.
+
+### Claude.ai
+
+Claude.ai custom skills are uploaded as a ZIP file. The ZIP should contain a folder named `font-playbook`, and that folder should contain `SKILL.md` plus the supporting folders.
+
+Correct ZIP shape:
+
+```text
+font-playbook.zip
+└── font-playbook/
+    ├── SKILL.md
+    ├── references/
+    ├── examples/
+    └── assets/
+```
+
+Steps:
+
+1. Download or clone this repo.
+2. Put the repo contents inside a folder named `font-playbook`.
+3. ZIP that `font-playbook` folder.
+4. In Claude.ai, go to `Customize > Skills`.
+5. Click `+ Create skill`, choose `Upload a skill`, and upload the ZIP.
+6. Enable the skill.
+
+Claude's own docs note that custom skills are uploaded from `Customize > Skills` as a ZIP containing the skill folder, and that `SKILL.md` is the required entrypoint.
+
+### Claude Code
+
+For a personal Claude Code skill available across projects:
+
+```bash
+mkdir -p ~/.claude/skills
+git clone https://github.com/MilkDeLeche/FontPlaybook.git ~/.claude/skills/font-playbook
+```
+
+Then invoke it directly:
+
+```text
+/font-playbook
+```
+
+Or ask naturally:
+
+```text
+Use FontPlaybook to audit this template's typography and recommend better fonts.
+```
+
+For a project-local install:
+
+```bash
+mkdir -p .claude/skills
+git clone https://github.com/MilkDeLeche/FontPlaybook.git .claude/skills/font-playbook
+```
+
+Claude Code discovers skills from `~/.claude/skills/<skill-name>/SKILL.md` for personal use and `.claude/skills/<skill-name>/SKILL.md` for project use.
 
 ## Using The Skill
 
