@@ -1,11 +1,26 @@
 ---
 name: font-playbook
-description: Teach or guide Claude and AI coding agents to choose, load, pair, and apply fonts in webpages and web apps. Use when building or reviewing frontend typography, selecting UI fonts, creating CSS type systems, implementing Google Fonts/self-hosted/variable fonts, setting heading/body styles, improving readability, or replacing generic/default web-safe typography with a polished webpage font system.
+description: Typography specialist for AI-built websites — audit fonts, fix loading, pair families, build type scales, and match type to industry. Use when the problem is specifically fonts, type hierarchy, font loading/pairing, generic typography, or domain-appropriate type (finance, SaaS, editorial, real estate, etc.). Companion to design-discovery for broader layout/color/motion asks — invoke font-playbook for the type slice; defer to design-discovery when the ask is wider than typography.
 ---
 
 # FontPlaybook
 
 Use this skill to make typography decisions concrete in a webpage. Do not stop at naming a font; inspect the site context, identify what the current typography is failing to do, compare appropriate font directions, implement how the chosen family is loaded and tokenized, then check it in the UI.
+
+## Companion skill — design-discovery
+
+**FontPlaybook is the typography specialist.** **[design-discovery](https://github.com/MilkDeLeche/Design-Discovery.git) is the broad creative director.** Keep them as separate skills; stay aware of when each should lead.
+
+| Lead with **FontPlaybook** when… | Hand off to **design-discovery** when… |
+| --- | --- |
+| Fonts feel generic or wrong for the business | The ask is "make this nicer/cooler/premium" across layout, color, motion, and composition |
+| Type hierarchy, scale, tracking, or pairing is the pain | The user wants visual direction menus with previews for a whole section |
+| A font isn't loading or weights are broken | Motion/animation is the main problem (GSAP skills may also apply) |
+| Industry-matched typography is the goal | Typography is a side note; the real work is structure, spacing, or interaction |
+
+**When design-discovery invokes you:** it has already located the element and read the house style. Your job is the typography audit → best/safe/bold recommendation set → implementation → browser verification. Don't reopen a broad design funnel unless the user explicitly wants layout/color options too — finish the type work, then offer design-discovery if they want to push the surrounding section further.
+
+**When you're running standalone** and the user drifts into non-type exploration ("what else can we do with this hero?"), say so and suggest continuing with design-discovery for those directions — then come back here to implement whichever type direction they pick.
 
 ## Core Workflow
 
